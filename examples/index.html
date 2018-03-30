@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <script src="../src/str2JSON.js" type="text/javascript"></script>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <textarea style="width: 300px;height: 100px;" class="j-str">a=1&b=2</textarea>
+            </td>
+            <td>
+                <button class="j-trans">转换-></button>
+            </td>
+            <td>
+                <textarea style="width: 300px;height: 100px;" class="j-tojson"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea style="width: 300px;height: 100px;" class="j-str">a.p1=1&a.p2=2</textarea>
+            </td>
+            <td>
+                <button class="j-trans">转换-></button>
+            </td>
+            <td>
+                <textarea style="width: 300px;height: 100px;" class="j-tojson"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea style="width: 300px;height: 100px;" class="j-str">a[]=1&a[]=2</textarea>
+            </td>
+            <td>
+                <button class="j-trans">转换-></button>
+            </td>
+            <td>
+                <textarea style="width: 300px;height: 100px;" class="j-tojson"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea style="width: 300px;height: 100px;" class="j-str">a.b.c.d.e=1</textarea>
+            </td>
+            <td>
+                <button class="j-trans">转换-></button>
+            </td>
+            <td>
+                <textarea style="width: 300px;height: 100px;" class="j-tojson"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea style="width: 300px;height: 100px;" class="j-str">a.b.arr[]=1&a.b.arr[]=2</textarea>
+            </td>
+            <td>
+                <button class="j-trans">转换-></button>
+            </td>
+            <td>
+                <textarea style="width: 300px;height: 100px;" class="j-tojson"></textarea>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        var jtrans = $(".j-trans");
+
+        jtrans.click(function(){
+            var parent = $(this).closest("tr");
+            var jstr = parent.find(".j-str"), jtojson = parent.find(".j-tojson");
+
+            jtojson.val( JSON.stringify( str2JSON(jstr.val()), "") );
+        });
+    </script>
+</body>
+</html>
