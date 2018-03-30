@@ -72,7 +72,7 @@
             var parent = $(this).closest("tr");
             var jstr = parent.find(".j-str"), jtojson = parent.find(".j-tojson");
 
-            jtojson.val( JSON.stringify( str2JSON(jstr.val()), "") );
+            jtojson.val( JSON.stringify( str2JSON(jstr.val()), "", 4) );
         });
     </script>
 </body>
