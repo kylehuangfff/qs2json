@@ -1,6 +1,6 @@
 {
   "name": "qs2json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "复杂结构的查询字符串转JSON对象",
   "author": "Kyle Huang",
   "main": "dist/qs2json.min.js",
@@ -8,13 +8,13 @@
     "type": "git",
     "url": "git+https://github.com/kylehuangfff/qs2json.git"
   },
-  "devDependencies": {},
-  "dependencies": {
+  "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^3.0.0",
     "pump": "^3.0.0"
   },
+  "dependencies": {},
   "bugs": {
     "url": "https://github.com/kylehuangfff/qs2json/issues"
   },
