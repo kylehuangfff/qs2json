@@ -1,5 +1,5 @@
 /*!
- * str2JSON：复杂结构的查询字符串到JSON对象的转换
+ * qs2json：复杂结构的查询字符串到JSON对象的转换
  * @version: 1.0.0
  * @author Kyle Huang
  */
@@ -12,13 +12,13 @@
         module.exports = factory();
     }
     else {
-        global.str2JSON = factory();
+        global.qs2json = factory();
     }
 
 }(this, function () {
     'use strict';
 
-    function str2JSON(str) {
+    function qs2json(str) {
 
         str = str || "";
 
@@ -105,5 +105,5 @@
         return obj;
     }
 
-    return str2JSON;
+    return qs2json;
 }));

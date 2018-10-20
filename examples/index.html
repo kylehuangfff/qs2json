@@ -3,7 +3,7 @@
 <html>
 <head>
     <title></title>
-    <script src="../src/str2JSON.js" type="text/javascript"></script>
+    <script src="../src/qs2json.js" type="text/javascript"></script>
     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
@@ -72,7 +72,7 @@
             var parent = $(this).closest("tr");
             var jstr = parent.find(".j-str"), jtojson = parent.find(".j-tojson");
 
-            jtojson.val( JSON.stringify( str2JSON(jstr.val()), "", 4) );
+            jtojson.val( JSON.stringify( qs2json(jstr.val()), "", 4) );
         });
     </script>
 </body>

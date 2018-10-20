@@ -1,17 +1,32 @@
 {
-    "name": "str2JSON",
-    "version": "1.0.0",
-    "description": "查询字符串转JSON对象",
-    "author": "Kyle Huang",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/kylehuangfff/str2JSON.git"
-    },
-    "devDependencies": {},
-    "dependencies": {
-        "gulp": "^3.9.1",
-        "gulp-rename": "^1.2.2",
-        "gulp-uglify": "^3.0.0",
-        "pump": "^3.0.0"
-    }
+  "name": "qs2json",
+  "version": "1.0.0",
+  "description": "复杂结构的查询字符串转JSON对象",
+  "author": "Kyle Huang",
+  "main": "dist/qs2json.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylehuangfff/qs2json.git"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^3.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/kylehuangfff/qs2json/issues"
+  },
+  "homepage": "https://github.com/kylehuangfff/qs2json#readme",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build": "gulp jsmin"
+  },
+  "keywords": [
+    "qs2json"
+  ],
+  "license": "MIT"
 }
